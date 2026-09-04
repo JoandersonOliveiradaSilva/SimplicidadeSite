@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Imperial+Script&family=Space+Grotesk:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+/* esconder barra de rolagemnavegadores Chrome, Safari e Edge */
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  display: none;
+}
+
+html, body {
+  /* Mantém a rolagem ativa */
+  overflow-y: auto; 
+  
+  /* Esconde a barra no Firefox e IE/Edge antigo */
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  overflow-x: hidden;
+}
+
+:root {
+  --cor1: #222831;
+  --cor2: #393e46;
+  --cor3: #00adb5;
+  --cor4: #00fff5;
+  --cor5: #9ac0bf;
+}
+
+@keyframes flicker {
+  0%, 100% { opacity: 1; }
+  30% { opacity: 0.2; }
+  35% { opacity: 0.9; }
+  45% { opacity: 0.3; }
+  50% { opacity: 1; }
+  80% { opacity: 0.4; }
+}
+
+
+.titulo {
+  color: var(--cor4);
+  font-family: "Bebas Neue", cursive;
+  font-size: 5rem;
+  text-shadow: 2px 2px 4px var(--cor3);
+  text-align: center;
+  animation: flicker 1.5s infinite alternate;
+}
+
+body {
+  background-color: var(--cor1);
+  font-family: "Space Grotesk", cursive;
+}
+
+.pagina {
+  max-width: 1200px;
+  padding: 0 20px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+article {
+  color: var(--cor5);
+  text-align: center;
+}
+
+.menu {
+  box-shadow: 0px 0px 3px var(--cor4);
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem;
+  background-color: transparent;
+}
+
+.menu a {
+  background: transparent;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+  outline: none;
+  font-size: 1.25rem;
+  color: var(--cor4);
+  text-decoration: none;
+}
+
+h2 {
+  color: var(--cor4);
+  font-family: "Bebas Neue", cursive;
+  font-size: 2rem;
+  text-shadow: 1px 1px 2px var(--cor3);
+  text-align: center;
+}
+span {
+  color: var(--cor4);
+  font-family: "Bebas Neue", cursive;
+  font-size: 1.25rem;
+  text-shadow: 1px 1px 2px var(--cor3);
+}
