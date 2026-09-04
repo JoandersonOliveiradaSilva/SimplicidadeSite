@@ -98,3 +98,74 @@ span {
   font-size: 1.25rem;
   text-shadow: 1px 1px 2px var(--cor3);
 }
+
+#entreEmContato {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 2rem;
+  background-color: var(--cor2);
+  border: 1px solid var(--cor3);
+  border-radius: 8px;
+  box-shadow: 0 0 10px var(--cor3);
+}
+
+#entreEmContato label {
+  color: var(--cor4);
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1rem;
+  margin-bottom: -8px;
+}
+
+#entreEmContato input,
+#entreEmContato textarea {
+  width: 100%;
+  padding: 10px 14px;
+  background-color: var(--cor1);
+  color: var(--cor5);
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1rem;
+  border: 1px solid var(--cor3);
+  border-radius: 4px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+#entreEmContato input:focus,
+#entreEmContato textarea:focus {
+  border-color: var(--cor4);
+  box-shadow: 0 0 8px var(--cor4);
+}
+
+#entreEmContato textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+#entreEmContato button {
+  padding: 10px;
+  background-color: var(--cor3);
+  color: var(--cor1);
+  font-family: "Bebas Neue", cursive;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#entreEmContato button:hover {
+  background-color: var(--cor4);
+  box-shadow: 0 0 12px var(--cor4);
+}
+
+#mensagemAviso {
+  text-align: center;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-top: 15px;
+}
