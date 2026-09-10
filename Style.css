@@ -152,6 +152,13 @@ span {
   color: var(--cor3);
 }
 
+.jogo a:hover {
+  color: var(--cor4);
+  text-shadow:
+    0 0 10px var(--cor4),
+    0 0 20px var(--cor3);
+}
+
 .jogoimagem {
   width: 400px;
   max-width: 100%;
